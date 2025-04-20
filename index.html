@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <!-- Using your local image file -->
+            <img src="images/css-logo.png" alt="CSS Logo" class="logo">
+            
+            <h1>Introduction to CSS</h1>
+        </div>
+    </header>
+
+    <nav id="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="showcase">
+        <div class="container">
+            <h2>Styling the Web with CSS</h2>
+            <p>Learn how to transform plain HTML into visually appealing web pages.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <main id="main-content">
+            <article class="post">
+                <h3>CSS Selectors</h3>
+                <p>CSS selectors are used to target HTML elements for styling. The three most common selectors are:</p>
+                <ul>
+                    <li>Element selectors (e.g., <code>p</code>, <code>h1</code>)</li>
+                    <li>Class selectors (e.g., <code>.container</code>)</li>
+                    <li>ID selectors (e.g., <code>#main-header</code>)</li>
+                </ul>
+            </article>
+
+            <article class="post featured">
+                <h3>Colors and Typography</h3>
+                <p>CSS allows you to control colors using various formats:</p>
+                <ul class="color-examples">
+                    <li>Hex codes: <span class="hex">#3498db</span></li>
+                    <li>RGB: <span class="rgb">rgb(46, 204, 113)</span></li>
+                    <li>Named colors: <span class="named">rebeccapurple</span></li>
+                </ul>
+                <p>For typography, you can specify font families, sizes, weights, and more to create readable and attractive text.</p>
+            </article>
+
+            <article class="post">
+                <h3>Box Model</h3>
+                <p>Every element is a box with:</p>
+                <ol>
+                    <li>Content</li>
+                    <li>Padding</li>
+                    <li>Border</li>
+                    <li>Margin</li>
+                </ol>
+                <div class="box-model-demo"></div>
+            </article>
+        </main>
+
+        <aside id="sidebar">
+            <div class="widget">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">CSS Documentation</a></li>
+                    <li><a href="https://colorhunt.co/" target="_blank" rel="noopener noreferrer">Color Picker</a></li>
+                    <li><a href="https://fontpair.co/" target="_blank" rel="noopener noreferrer">Font Pairings</a></li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h4>Resources</h4>
+                <p>Check out these resources to learn more about CSS:</p>
+                <button class="btn" onclick="window.open('https://www.w3schools.com/css/','_blank')">Tutorials</button>
+                <button class="btn" onclick="window.open('https://css-tricks.com/','_blank')">Examples</button>
+            </div>
+            
+            <!-- Newsletter Form -->
+            <div class="widget">
+                <h4>Stay Updated</h4>
+                <form id="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+
+    <footer id="main-footer">
+        <p>&copy; <span id="current-year"></span> CSS Introduction. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

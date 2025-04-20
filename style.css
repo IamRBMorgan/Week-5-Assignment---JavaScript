@@ -1,0 +1,243 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header Styles */
+#main-header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1.5rem 0;
+    border-bottom: 5px solid #3498db;
+}
+
+#main-header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #ecf0f1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    vertical-align: middle;
+}
+
+/* Navigation */
+#main-nav {
+    background-color: #3498db;
+}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+#main-nav li {
+    padding: 1rem;
+}
+
+#main-nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+#main-nav a:hover {
+    color: #f1c40f;
+}
+
+/* Showcase */
+#showcase {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+#showcase h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#showcase p {
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+#main-content {
+    flex: 2;
+    padding-right: 2rem;
+}
+
+.post {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.post p {
+    margin-bottom: 1rem;
+}
+
+.featured {
+    border-left: 5px solid #3498db;
+    background-color: #f8f9fa;
+}
+
+/* Sidebar */
+#sidebar {
+    flex: 1;
+}
+
+.widget {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.widget h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+/* Color Examples */
+.color-examples li {
+    margin-bottom: 0.5rem;
+}
+
+.hex {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.rgb {
+    color: rgb(46, 204, 113);
+    font-weight: bold;
+}
+
+.named {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+/* Box Model Demo */
+.box-model-demo {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    margin: 2rem auto;
+    padding: 20px;
+    border: 5px solid #2c3e50;
+    position: relative;
+}
+
+.box-model-demo::before {
+    content: 'Margin';
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #7f8c8d;
+}
+
+.box-model-demo::after {
+    content: 'Border';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+/* Footer */
+#main-footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    #main-content {
+        padding-right: 0;
+    }
+    
+    #main-nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
